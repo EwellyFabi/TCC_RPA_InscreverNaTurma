@@ -1,0 +1,1276 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="3346,7177" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umaee="clr-namespace:UiPath.MicrosoftOffice365.Activities.Excel.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umafe="clr-namespace:UiPath.MicrosoftOffice365.Activities.Files.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umas="clr-namespace:UiPath.MicrosoftOffice365.Activities.Sharepoint;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umem="clr-namespace:UiPath.MicrosoftOffice365.Excel.Models;assembly=UiPath.MicrosoftOffice365" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Excel.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Excel.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Sharepoint</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="3356,7112" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Aluno" />
+      <Variable x:TypeArguments="x:String" Name="Turma" />
+      <Variable x:TypeArguments="x:String" Name="Email" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Firefox: Acesso ao site | Moodle" sap:VirtualizedContainerService.HintSize="3294,560" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="a5637bf5-9046-4171-b595-f664976aace7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,310" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Acessar'" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a5637bf5-9046-4171-b595-f664976aace7" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/login/index.php" CVScreenId="b36bc8f6-6b77-4930-bdcf-6683dd92c11b" CvElementArea="479, 356, 100, 50" CvTextArea="496, 374, 66, 16" CvTextArgument="Acessar" CvType="Button" DesignTimeRectangle="481, 358, 96, 46" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='loginbtn' tag='BUTTON' type='submit' class='btn btn-primary btn-lg' aaname='Acessar' check:innerText='Acessar' /&gt;" Guid="4788fe43-a9da-4626-85bb-ae2b6a300291" InformativeScreenshot="84ed642df1c73e62c8770ce27a21edeb.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Acesso ao site | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b36bc8f6-6b77-4930-bdcf-6683dd92c11b" CvTextArea="480, 425, 107, 14" CvTextArgument="Perdeu a senha?" CvType="Text" DesignTimeRectangle="481, 422, 106, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='login' tag='A' type='' class='' aaname='Perdeu a senha?' check:innerText='Perdeu a senha?' /&gt;" Guid="4e004be7-b542-4f80-9bfd-56caa25235e8" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Firefox" IconBase64="AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKHzzACd78xkoffM3LIH0MD+N9Qcjf/QALof1ICuH9TguivUrOpL2A4nA+gE0k/YnLI/2ODOT9ywAAAAAAAAAACh88wAne/NuKH3z9iyB9NQ/jfUdI4D0AC6H9Y4rh/X5Lor1vjqS9g2JwPoFNZP2rCyP9vczk/fEZJb1AmOV9QYqfvMAJ3zzdCh98/8sgfTgP431HySA9AAuiPWWK4f1/y6K9ck6kvYNicD6BTWT9rYsj/b/M5T3zzt68yI0dfIxLXrzACd883QoffP/LIH04D+N9R8kgPQAL4j1liuH9f8uivXJOpL1DYnA+gU1k/a2LY/2/zOU9880dfJNMnPySSp38gAnfPN0KH7z/yyC9eBAjvYfJID1AC+I9ZYrh/X/Lov1yTuT9g2JwPoFNZP2ti2P9v8zlPfPO3rzPDt68y8uevIAKHzzdCl98P8ugO7iQovtIRt57wAviPWYK4f1/y6L9cs8k/YOf7v6BTST9rcsj/b/M5T3zzt69BU/fPQQRWyrAFV0oHpTa4//R1l1+EJFTKlET2FXMIj0xCuH9f8ui/XnPpX2QUCY9y8wkPbWLI/2/zOU975mjdgedoy3LpKNiB9hXl2ZT0xM/0VCQ/80MjT/Ky00+S1foP0th/P9LIn1/y6M9eoujvbmLI72/y+Q9vQ7mPdpkJ++G3mEnnxqb33QWlxl9UtLUP9BQEP/NTQ3/ygnKf8qMT7TOYHZczKN960vjPXcL4723jCQ9r84lfZhV6b4CHR8jwB9hpwGZmx8PFVaaZlFS1rfOzxF+y8uMf8rKS3/NDI1nVBCNhBMqv8GRZj2GUaa9xtLnvcLxOH8AH+6+QAAAAAAAAAAAG1mXQB+c2MDV1VWIUVER1g3NjmNLSwwtSkoLM00MzaVVFNUHzc2OQDHxcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAClpaYA4uLiAFZVWAY6Oj0TODY6JFVUVhUFBAkAw8LCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADhAAAA4QAAACEAAAAhAAAAIQAAACEAAAAgAAAAAAAAAAAAAACAAQAA4B8AAPwfAAD//wAA//8AAA==" InformativeScreenshot="d68d759eccaa266519858a4cccdfcedb.png" Selector="&lt;html app='firefox.exe' title='Acesso ao site | Moodle' /&gt;" Title="Acesso ao site | Moodle" Url="http://192.168.61.140/moodle/login/index.php" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <umae:ForEachSheetConnections ConnectionAccountName="{x:Null}" Length="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemUrl="{x:Null}" ManualEntrySiteUrl="{x:Null}" AuthScopesInvalid="False" BrowserDriveId="3b9a46b1257cbd57" BrowserItemFriendlyName="Turma.xlsx" BrowserItemId="3B9A46B1257CBD57!108144" ConnectionId="4c9653a8-1698-4136-8916-67d49da840fa" DisplayName="For Each Sheet in Workbook" sap:VirtualizedContainerService.HintSize="3294,6117" sap2010:WorkflowViewState.IdRef="ForEachSheetConnections_1" ItemSelectionMode="Browse" UseConnectionService="True">
+      <umae:ForEachSheetConnections.Body>
+        <ActivityAction x:TypeArguments="x:String, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="x:String" Name="CurrentItem" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItemIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="3260,5908" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="PlanilhaDados" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umae:ReadRangeConnections x:TypeArguments="sd:DataTable" BrowserParentItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntryItemUrl="{x:Null}" ManualEntrySiteUrl="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" BrowserDriveId="3b9a46b1257cbd57" BrowserItemFriendlyName="Turma.xlsx" BrowserItemId="3B9A46B1257CBD57!108144" ConnectionId="4c9653a8-1698-4136-8916-67d49da840fa" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="3198,290" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_4" ItemSelectionMode="Browse" RangeMode="Default" ReadAs="Values" UseConnectionService="True" WorkingWithTemplateWorkbook="False">
+              <umae:ReadRangeConnections.BrowserDriveName>
+                <InArgument x:TypeArguments="x:String" />
+              </umae:ReadRangeConnections.BrowserDriveName>
+              <umae:ReadRangeConnections.BrowserSiteUrl>
+                <InArgument x:TypeArguments="x:String" />
+              </umae:ReadRangeConnections.BrowserSiteUrl>
+              <umae:ReadRangeConnections.ItemIdBackup>
+                <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" StoredValue="Browse">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="umafe:EDriveItemMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </umae:ReadRangeConnections.ItemIdBackup>
+              <umae:ReadRangeConnections.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </CSharpValue.Result>CurrentItem</CSharpValue>
+                </InArgument>
+              </umae:ReadRangeConnections.Range>
+              <umae:ReadRangeConnections.Result>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">
+                    <CSharpReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd:DataTable)" />
+                    </CSharpReference.Result>PlanilhaDados</CSharpReference>
+                </OutArgument>
+              </umae:ReadRangeConnections.Result>
+            </umae:ReadRangeConnections>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="3198,4979" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="3164,4781" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Parallel sap:VirtualizedContainerService.HintSize="3102,268" sap2010:WorkflowViewState.IdRef="Parallel_1">
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Aluno" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="374,189" sap2010:WorkflowViewState.IdRef="GetRowItem_1">
+                        <ui:GetRowItem.Row>
+                          <InArgument x:TypeArguments="sd:DataRow">
+                            <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="sd:DataRow" />
+                              </CSharpValue.Result>CurrentRow</CSharpValue>
+                          </InArgument>
+                        </ui:GetRowItem.Row>
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">
+                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">
+                              <CSharpReference.Result>
+                                <OutArgument x:TypeArguments="Location(x:String)" />
+                              </CSharpReference.Result>Aluno</CSharpReference>
+                          </OutArgument>
+                        </ui:GetRowItem.Value>
+                      </ui:GetRowItem>
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Turma" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="374,189" sap2010:WorkflowViewState.IdRef="GetRowItem_2">
+                        <ui:GetRowItem.Row>
+                          <InArgument x:TypeArguments="sd:DataRow">
+                            <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="sd:DataRow" />
+                              </CSharpValue.Result>CurrentRow</CSharpValue>
+                          </InArgument>
+                        </ui:GetRowItem.Row>
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">
+                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">
+                              <CSharpReference.Result>
+                                <OutArgument x:TypeArguments="Location(x:String)" />
+                              </CSharpReference.Result>Turma</CSharpReference>
+                          </OutArgument>
+                        </ui:GetRowItem.Value>
+                      </ui:GetRowItem>
+                      <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Email" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="374,189" sap2010:WorkflowViewState.IdRef="GetRowItem_3">
+                        <ui:GetRowItem.Row>
+                          <InArgument x:TypeArguments="sd:DataRow">
+                            <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">CurrentRow</CSharpValue>
+                          </InArgument>
+                        </ui:GetRowItem.Row>
+                        <ui:GetRowItem.Value>
+                          <OutArgument x:TypeArguments="x:String">
+                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">Email</CSharpReference>
+                          </OutArgument>
+                        </ui:GetRowItem.Value>
+                      </ui:GetRowItem>
+                    </Parallel>
+                    <uix:NCheckState DisplayName="Check App State 'Resumo dos cursos'" sap:VirtualizedContainerService.HintSize="3102,4425" sap2010:WorkflowViewState.IdRef="NCheckState_2" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1524,4183" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Firefox: Meus cursos | Moodle" sap:VirtualizedContainerService.HintSize="1462,4093" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1428,3810" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Resumo dos cursos'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1366,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/my/courses.php" DesignTimeRectangle="378, 327, 218, 37" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control withclear rounded' placeholder='Buscar' aaname='                         Buscar cursos                     ' /&gt;" Guid="66f44c1a-3485-441d-bc4f-9dbedbfd2e19" InformativeScreenshot="e3d5eea944c1e1bcad6d226af756a640.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Meus cursos | Moodle' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="291, 269, 167, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H5' type='' class='card-title d-inline' aaname='Resumo dos cursos' check:innerText='Resumo dos cursos' /&gt;" Guid="5116a9c3-e9ec-4fb1-bf97-752545398bae" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                    <uix:NTypeInto.Text>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">
+                                          <CSharpValue.Result>
+                                            <OutArgument x:TypeArguments="x:String" />
+                                          </CSharpValue.Result>Turma</CSharpValue>
+                                      </InArgument>
+                                    </uix:NTypeInto.Text>
+                                    <uix:NTypeInto.VerifyOptions>
+                                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      </uix:VerifyExecutionTypeIntoOptions>
+                                    </uix:NTypeInto.VerifyOptions>
+                                  </uix:NTypeInto>
+                                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="1366,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INFORMÁTICA - EAD'" sap:VirtualizedContainerService.HintSize="1366,227" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/my/courses.php" CVScreenId="d72c0bb0-7b5a-4818-93e0-fa7ee6069f95" CvTextArea="303, 503, 139, 17" CvType="Text" DesignTimeRectangle="304, 493, 138, 20" DesignTimeScaleFactor="1" ElementType="Text" Guid="bc27732c-6feb-4f1c-91bc-ecc5f4c8466f" InformativeScreenshot="6c5a4d97e90d07f5445f0aeeecab89bd.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Meus cursos | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                            <uix:Target CVScreenId="d72c0bb0-7b5a-4818-93e0-fa7ee6069f95" CvElementArea="504, 569, 21, 26" CvType="Icon" DesignTimeRectangle="507, 564, 16, 16" FuzzySelectorArgument="&lt;webctrl parentid='yui_3_18_1_1_1725035480988_110' tag='I' type='' class='icon fa fa-ellipsis-v fa-fw m-0' aaname='' /&gt;" Guid="2a90da0f-c971-42ca-831d-00b1ac366333" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABYSURBVDhPY/hPZTAcDPx29v/MBPf/lr71/zc//wUVxA0IGrgnT++/rKIqBHtP//8EKo4L0N9AqnuZVEB/Fx4oMoKHoYLfbMrDkOoGjkbKaKRggsFu4P//AEFn6qKwLHDiAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                            <uix:Target CVScreenId="d72c0bb0-7b5a-4818-93e0-fa7ee6069f95" CvTextArea="290, 274, 169, 16" CvTextArgument="Resumo dos cursos" CvType="Text" DesignTimeRectangle="291, 259, 167, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H5' type='' class='card-title d-inline' aaname='Resumo dos cursos' check:innerText='Resumo dos cursos' /&gt;" Guid="cf8ba20a-2151-48d1-85a2-2b514b91bfd7" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                        <uix:TargetAnchorable.CvTextArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">
+                                              <CSharpValue.Result>
+                                                <OutArgument x:TypeArguments="x:String" />
+                                              </CSharpValue.Result>string.Format("*{0}*", Turma)</CSharpValue>
+                                          </InArgument>
+                                        </uix:TargetAnchorable.CvTextArgument>
+                                        <uix:TargetAnchorable.FuzzySelectorArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">
+                                              <CSharpValue.Result>
+                                                <OutArgument x:TypeArguments="x:String" />
+                                              </CSharpValue.Result>string.Format("&lt;webctrl id='yui_3_18_1_1_1725035480988_106' tag='SPAN' type='' class='multiline' aaname='*{0}*' check:innerText='*{0}*' /&gt;", Turma)</CSharpValue>
+                                          </InArgument>
+                                        </uix:TargetAnchorable.FuzzySelectorArgument>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Participantes'" sap:VirtualizedContainerService.HintSize="1366,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/course/view.php?id=2" CVScreenId="0b85ab55-4586-421d-ab12-439877cad13a" CvTextArea="628, 275, 86, 17" CvTextArgument="Participantes" CvType="Text" DesignTimeRectangle="613, 253, 116, 60" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                                         Participantes                                                     ' aria-role='menuitem' tag='A' type='' class='nav-link  ' check:innerText='Participantes' /&gt;" Guid="26c19ae9-2af7-4fb0-a673-5e54d5426c72" InformativeScreenshot="d17cc935ba3543f196627c1624aad4d5.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Curso: INFORMÁTICA - EAD | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="0b85ab55-4586-421d-ab12-439877cad13a" CvTextArea="432, 275, 38, 14" CvTextArgument="Curso" CvType="Text" DesignTimeRectangle="417, 253, 69, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                                         Curso                                                     ' aria-role='menuitem' tag='A' type='' class='nav-link active active_tree_node ' check:innerText='Curso' /&gt;" Guid="44acb7fc-34e1-46df-8aca-9d1d7c3be294" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inscrever usuários'" sap:VirtualizedContainerService.HintSize="1366,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" DesignTimeRectangle="568, 339, 142, 37" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Inscrever usuários' check:text='Inscrever usuários' /&gt;" Guid="80ab7c27-40fb-4af2-b320-554c953752c0" InformativeScreenshot="b70d28be2284cb8e0344969651e79113.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="332, 339, 206, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' type='' class='btn dropdown-toggle' aaname='                             Usuários inscritos                         ' check:innerText='Usuários inscritos' /&gt;" Guid="7f85f2d9-9fba-4a72-b583-38c2b31ee63f" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="1366,227" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" DesignTimeRectangle="676, 289, 21, 30" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='form_autocomplete_downarrow-1725036298594' tag='SPAN' type='' class='form-autocomplete-downarrow position-absolute p-1' aaname='▼' check:innerText='▼' /&gt;" Guid="7ccd3ddd-a46c-4772-aa3e-de54da1cc38c" InformativeScreenshot="329174cdc57e86e1881e3e64b9970328.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="308, 200, 244, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='id_main' tag='H3' type='' class='d-flex align-self-stretch align-items-center mb-0' aaname='             Opções de inscrição         ' check:innerText='Opções de inscrição' /&gt;" Guid="9e11502d-9d58-448c-8c66-adbbca0a6a3c" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Selecione os usuários'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1366,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="2f584861-c515-4c49-ad1e-0f4abab59db3" CvElementArea="502, 283, 201, 40" CvType="InputBox" DesignTimeRectangle="503, 285, 198, 37" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='form_autocomplete_input-1725036298594' tag='INPUT' type='text' class='form-control' placeholder='Buscar' aaname='                     Selecione os usuários                 ' /&gt;" Guid="6b5beb58-55d5-4329-a8da-0acf85defd04" InformativeScreenshot="76dc86cdaa52cd847490412b4ebf105c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="2f584861-c515-4c49-ad1e-0f4abab59db3" CvTextArea="307, 251, 143, 14" CvTextArgument="Selecione OS usuários" CvType="Text" DesignTimeRectangle="308, 246, 141, 68" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id_userlist_label' tag='LABEL' type='' class='d-inline word-break ' aaname='                     Selecione os usuários                 ' check:innerText='Selecione os usuários' /&gt;" Guid="53a21f6d-ff44-451b-a65a-85d61665baed" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                    <uix:NTypeInto.Text>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">
+                                          <CSharpValue.Result>
+                                            <OutArgument x:TypeArguments="x:String" />
+                                          </CSharpValue.Result>Aluno</CSharpValue>
+                                      </InArgument>
+                                    </uix:NTypeInto.Text>
+                                    <uix:NTypeInto.VerifyOptions>
+                                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      </uix:VerifyExecutionTypeIntoOptions>
+                                    </uix:NTypeInto.VerifyOptions>
+                                  </uix:NTypeInto>
+                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1366,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                                    <uix:NKeyboardShortcuts.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NKeyboardShortcuts.VerifyOptions>
+                                  </uix:NKeyboardShortcuts>
+                                  <uix:NCheckState DisplayName="Check App State 'Opções de inscrição'" sap:VirtualizedContainerService.HintSize="1366,1864" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                    <uix:NCheckState.IfExists>
+                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="608,1245" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inscrever usuários'" sap:VirtualizedContainerService.HintSize="546,227" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="d6de0e68-91a0-4117-ae98-67dd59e07d48" CvElementArea="930, 454, 145, 40" CvTextArea="944, 467, 118, 14" CvTextArgument="Inscrever usuários" CvType="Button" DesignTimeRectangle="932, 456, 142, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Inscrever usuários' parentid='yui_3_18_1_1_1725036298311_232' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='Inscrever usuários' /&gt;" Guid="db400e27-8cb2-4355-ba73-fe5de1828ee8" InformativeScreenshot="392f502e6d119725b2017eec627cd2ad.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="d6de0e68-91a0-4117-ae98-67dd59e07d48" CvElementArea="839, 454, 87, 40" CvTextArea="853, 467, 59, 14" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="841, 456, 83, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='yui_3_18_1_1_1725036298311_232' tag='BUTTON' type='button' class='btn btn-secondary' aaname='Cancelar' check:innerText='Cancelar' /&gt;" Guid="9f1e7aa3-1091-4e5f-8939-acc9432f8924" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="546,928" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_13">
+                                          <ueab:ExcelProcessScopeX.Body>
+                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,816" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_14">
+                                                  <ueab:ExcelProcessScopeX.Body>
+                                                    <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,618" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <umae:WriteRowConnections ArrayRow="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntryItemUrl="{x:Null}" ManualEntrySiteUrl="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" BrowserDriveId="3b9a46b1257cbd57" BrowserItemFriendlyName="Logs Inscrições nos cursos.xlsx" BrowserItemId="3B9A46B1257CBD57!108142" ConnectionId="4c9653a8-1698-4136-8916-67d49da840fa" DataType="IndividualFields" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="354,530" sap2010:WorkflowViewState.IdRef="WriteRowConnections_8" ItemSelectionMode="Browse" Range="Planilha1" RangeMode="Sheet" RowPosition="0" UseConnectionService="True" WorkingWithTemplateWorkbook="False" WriteMode="Append">
+                                                          <umae:WriteRowConnections.AllFields>
+                                                            <x:Array Type="umem:RangeColumn">
+                                                              <umem:RangeColumn DisplayName="Column A" Guid="d85d8fb3-2481-4d53-a5aa-3af343fe4aaf" Index="0" Name="Column A">
+                                                                <umem:RangeColumn.Sample>
+                                                                  <umem:CellDetail TypeFormat="{x:Null}" Type="Object" Value="" />
+                                                                </umem:RangeColumn.Sample>
+                                                              </umem:RangeColumn>
+                                                            </x:Array>
+                                                          </umae:WriteRowConnections.AllFields>
+                                                          <umae:WriteRowConnections.BrowserDriveName>
+                                                            <InArgument x:TypeArguments="x:String" />
+                                                          </umae:WriteRowConnections.BrowserDriveName>
+                                                          <umae:WriteRowConnections.BrowserSiteUrl>
+                                                            <InArgument x:TypeArguments="x:String" />
+                                                          </umae:WriteRowConnections.BrowserSiteUrl>
+                                                          <umae:WriteRowConnections.InputDataTypeBackup>
+                                                            <usau:BackupSlot x:TypeArguments="umaee:InputDataType" StoredValue="IndividualFields">
+                                                              <usau:BackupSlot.BackupValues>
+                                                                <scg:List x:TypeArguments="x:Object" x:Key="DataRow" Capacity="1">
+                                                                  <InArgument x:TypeArguments="sd:DataRow">
+                                                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">Aluno + " Foi cadastrado corretamente"</CSharpValue>
+                                                                  </InArgument>
+                                                                </scg:List>
+                                                              </usau:BackupSlot.BackupValues>
+                                                            </usau:BackupSlot>
+                                                          </umae:WriteRowConnections.InputDataTypeBackup>
+                                                          <umae:WriteRowConnections.ItemIdBackup>
+                                                            <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" StoredValue="Browse">
+                                                              <usau:BackupSlot.BackupValues>
+                                                                <scg:Dictionary x:TypeArguments="umafe:EDriveItemMode, scg:List(x:Object)" />
+                                                              </usau:BackupSlot.BackupValues>
+                                                            </usau:BackupSlot>
+                                                          </umae:WriteRowConnections.ItemIdBackup>
+                                                          <umae:WriteRowConnections.RangeWriteModeBackup>
+                                                            <usau:BackupSlot x:TypeArguments="umaee:RangeWriteMode" StoredValue="Append">
+                                                              <usau:BackupSlot.BackupValues>
+                                                                <scg:Dictionary x:TypeArguments="umaee:RangeWriteMode, scg:List(x:Object)" />
+                                                              </usau:BackupSlot.BackupValues>
+                                                            </usau:BackupSlot>
+                                                          </umae:WriteRowConnections.RangeWriteModeBackup>
+                                                          <umae:WriteRowConnections.State>
+                                                            <umas:ActivityState>
+                                                              <umas:ActivityState.SelectedFields>
+                                                                <scg:List x:TypeArguments="umas:DynamicField" Capacity="1">
+                                                                  <umas:DynamicField Id="d85d8fb3-2481-4d53-a5aa-3af343fe4aaf" Name="dynamicField_AddRangeProperty_20">
+                                                                    <umas:DynamicField.ArgumentValue>
+                                                                      <InArgument x:TypeArguments="x:Object">
+                                                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">Aluno + " INSCRITO COM SUCESSO NO CURSO " + Turma</CSharpValue>
+                                                                      </InArgument>
+                                                                    </umas:DynamicField.ArgumentValue>
+                                                                  </umas:DynamicField>
+                                                                </scg:List>
+                                                              </umas:ActivityState.SelectedFields>
+                                                            </umas:ActivityState>
+                                                          </umae:WriteRowConnections.State>
+                                                        </umae:WriteRowConnections>
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </ueab:ExcelProcessScopeX.Body>
+                                                </ueab:ExcelProcessScopeX>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ueab:ExcelProcessScopeX.Body>
+                                        </ueab:ExcelProcessScopeX>
+                                      </Sequence>
+                                    </uix:NCheckState.IfExists>
+                                    <uix:NCheckState.IfNotExists>
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="704,1620" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancelar'" sap:VirtualizedContainerService.HintSize="642,227" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9f2d2a8-1318-4998-a343-ff8848bee8be" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="c74a2f58-cd6a-4dc8-b61d-bb3f6e50cf51" CvElementArea="839, 454, 87, 40" CvTextArea="853, 467, 59, 14" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="841, 456, 83, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Cancelar' parentid='yui_3_18_1_1_1725038047867_233' tag='BUTTON' type='button' class='btn btn-secondary' check:innerText='Cancelar' /&gt;" Guid="6af7b93c-0081-4848-be3d-fb3960ac4e19" InformativeScreenshot="d7c6921bbd56a0678be2b91f49fdd43c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="c74a2f58-cd6a-4dc8-b61d-bb3f6e50cf51" CvElementArea="930, 454, 145, 40" CvTextArea="944, 467, 118, 14" CvTextArgument="Inscrever usuários" CvType="Button" DesignTimeRectangle="932, 456, 142, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Inscrever usuários' parentid='yui_3_18_1_1_1725038047867_233' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='Inscrever usuários' /&gt;" Guid="000665c0-f449-446c-a992-5fa4bc58d529" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,177" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                                          <ui:LogMessage.Message>
+                                            <InArgument x:TypeArguments="x:Object">
+                                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">
+                                                <CSharpValue.Result>
+                                                  <OutArgument x:TypeArguments="x:Object" />
+                                                </CSharpValue.Result>"Usuário já isncrito no curso ou não possui cadastro nos sistema"</CSharpValue>
+                                            </InArgument>
+                                          </ui:LogMessage.Message>
+                                        </ui:LogMessage>
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="642,1126" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+                                          <ueab:ExcelProcessScopeX.Body>
+                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                              </ActivityAction.Argument>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="608,1014" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="546,926" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_16">
+                                                  <ueab:ExcelProcessScopeX.Body>
+                                                    <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,816" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_15">
+                                                          <ueab:ExcelProcessScopeX.Body>
+                                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                                              <ActivityAction.Argument>
+                                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                                              </ActivityAction.Argument>
+                                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,618" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <umae:WriteRowConnections ArrayRow="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntryItemUrl="{x:Null}" ManualEntrySiteUrl="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" BrowserDriveId="3b9a46b1257cbd57" BrowserItemFriendlyName="Logs Inscrições nos cursos.xlsx" BrowserItemId="3B9A46B1257CBD57!108142" ConnectionId="4c9653a8-1698-4136-8916-67d49da840fa" DataType="IndividualFields" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="354,530" sap2010:WorkflowViewState.IdRef="WriteRowConnections_7" ItemSelectionMode="Browse" Range="Planilha1" RangeMode="Sheet" RowPosition="0" UseConnectionService="True" WorkingWithTemplateWorkbook="False" WriteMode="Append">
+                                                                  <umae:WriteRowConnections.AllFields>
+                                                                    <x:Array Type="umem:RangeColumn">
+                                                                      <umem:RangeColumn DisplayName="Column A" Guid="57374456-531c-4bfc-aee4-90be592a9dab" Index="0" Name="Column A">
+                                                                        <umem:RangeColumn.Sample>
+                                                                          <umem:CellDetail TypeFormat="{x:Null}" Type="Object" Value="" />
+                                                                        </umem:RangeColumn.Sample>
+                                                                      </umem:RangeColumn>
+                                                                    </x:Array>
+                                                                  </umae:WriteRowConnections.AllFields>
+                                                                  <umae:WriteRowConnections.BrowserDriveName>
+                                                                    <InArgument x:TypeArguments="x:String" />
+                                                                  </umae:WriteRowConnections.BrowserDriveName>
+                                                                  <umae:WriteRowConnections.BrowserSiteUrl>
+                                                                    <InArgument x:TypeArguments="x:String" />
+                                                                  </umae:WriteRowConnections.BrowserSiteUrl>
+                                                                  <umae:WriteRowConnections.InputDataTypeBackup>
+                                                                    <usau:BackupSlot x:TypeArguments="umaee:InputDataType" StoredValue="IndividualFields">
+                                                                      <usau:BackupSlot.BackupValues>
+                                                                        <scg:List x:TypeArguments="x:Object" x:Key="DataRow" Capacity="1">
+                                                                          <InArgument x:TypeArguments="sd:DataRow">
+                                                                            <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">Aluno + " Foi cadastrado corretamente"</CSharpValue>
+                                                                          </InArgument>
+                                                                        </scg:List>
+                                                                      </usau:BackupSlot.BackupValues>
+                                                                    </usau:BackupSlot>
+                                                                  </umae:WriteRowConnections.InputDataTypeBackup>
+                                                                  <umae:WriteRowConnections.ItemIdBackup>
+                                                                    <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" StoredValue="Browse">
+                                                                      <usau:BackupSlot.BackupValues>
+                                                                        <scg:Dictionary x:TypeArguments="umafe:EDriveItemMode, scg:List(x:Object)" />
+                                                                      </usau:BackupSlot.BackupValues>
+                                                                    </usau:BackupSlot>
+                                                                  </umae:WriteRowConnections.ItemIdBackup>
+                                                                  <umae:WriteRowConnections.RangeWriteModeBackup>
+                                                                    <usau:BackupSlot x:TypeArguments="umaee:RangeWriteMode" StoredValue="Append">
+                                                                      <usau:BackupSlot.BackupValues>
+                                                                        <scg:Dictionary x:TypeArguments="umaee:RangeWriteMode, scg:List(x:Object)" />
+                                                                      </usau:BackupSlot.BackupValues>
+                                                                    </usau:BackupSlot>
+                                                                  </umae:WriteRowConnections.RangeWriteModeBackup>
+                                                                  <umae:WriteRowConnections.State>
+                                                                    <umas:ActivityState>
+                                                                      <umas:ActivityState.SelectedFields>
+                                                                        <scg:List x:TypeArguments="umas:DynamicField" Capacity="1">
+                                                                          <umas:DynamicField Id="57374456-531c-4bfc-aee4-90be592a9dab" Name="dynamicField_AddRangeProperty_20">
+                                                                            <umas:DynamicField.ArgumentValue>
+                                                                              <InArgument x:TypeArguments="x:Object">
+                                                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">Aluno + " JÁ INSCRITO NO CURSO " + Turma + " OU NÃO POSSUI CADASTRO NO SISTEMA."</CSharpValue>
+                                                                              </InArgument>
+                                                                            </umas:DynamicField.ArgumentValue>
+                                                                          </umas:DynamicField>
+                                                                        </scg:List>
+                                                                      </umas:ActivityState.SelectedFields>
+                                                                    </umas:ActivityState>
+                                                                  </umae:WriteRowConnections.State>
+                                                                </umae:WriteRowConnections>
+                                                              </Sequence>
+                                                            </ActivityAction>
+                                                          </ueab:ExcelProcessScopeX.Body>
+                                                        </ueab:ExcelProcessScopeX>
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </ueab:ExcelProcessScopeX.Body>
+                                                </ueab:ExcelProcessScopeX>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ueab:ExcelProcessScopeX.Body>
+                                        </ueab:ExcelProcessScopeX>
+                                      </Sequence>
+                                    </uix:NCheckState.IfNotExists>
+                                    <uix:NCheckState.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="b10b5b98-f6eb-42e7-8b66-0b3f8403e0c7" CvElementArea="507, 244, 432, 36" CvTextArea="757, 256, 175, 16" CvType="Button" DesignTimeRectangle="760, 254, 170, 17" DesignTimeScaleFactor="1" Guid="fe7f431a-4ab5-4ac5-a432-8a35806ef529" InformativeScreenshot="db36012c784961c3d316b4675467d640.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="b10b5b98-f6eb-42e7-8b66-0b3f8403e0c7" CvTextArea="306, 205, 246, 28" CvTextArgument="Opções de inscrição" CvType="Text" DesignTimeRectangle="308, 200, 244, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='id_main' tag='H3' type='' class='d-flex align-self-stretch align-items-center mb-0' aaname='             Opções de inscrição         ' check:innerText='Opções de inscrição' /&gt;" Guid="6f3af29a-5f11-4083-a993-b3e87928fee0" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                        <uix:TargetAnchorable.CvTextArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">string.Format("*{0}*", Email)</CSharpValue>
+                                          </InArgument>
+                                        </uix:TargetAnchorable.CvTextArgument>
+                                        <uix:TargetAnchorable.FuzzySelectorArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">string.Format("&lt;webctrl parentid='form_autocomplete_selection-1725043606115-0' tag='SMALL' type='' class='' aaname='*{0}*' check:innerText='*{0}*' /&gt;", Email)</CSharpValue>
+                                          </InArgument>
+                                        </uix:TargetAnchorable.FuzzySelectorArgument>
+                                      </uix:TargetAnchorable>
+                                    </uix:NCheckState.Target>
+                                  </uix:NCheckState>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Firefox" IconBase64="AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKHzzACd78xkoffM3LIH0MD+N9Qcjf/QALof1ICuH9TguivUrOpL2A4nA+gE0k/YnLI/2ODOT9ywAAAAAAAAAACh88wAne/NuKH3z9iyB9NQ/jfUdI4D0AC6H9Y4rh/X5Lor1vjqS9g2JwPoFNZP2rCyP9vczk/fEZJb1AmOV9QYqfvMAJ3zzdCh98/8sgfTgP431HySA9AAuiPWWK4f1/y6K9ck6kvYNicD6BTWT9rYsj/b/M5T3zzt68yI0dfIxLXrzACd883QoffP/LIH04D+N9R8kgPQAL4j1liuH9f8uivXJOpL1DYnA+gU1k/a2LY/2/zOU9880dfJNMnPySSp38gAnfPN0KH7z/yyC9eBAjvYfJID1AC+I9ZYrh/X/Lov1yTuT9g2JwPoFNZP2ti2P9v8zlPfPO3rzPDt68y8uevIAKHzzdCl98P8ugO7iQovtIRt57wAviPWYK4f1/y6L9cs8k/YOf7v6BTST9rcsj/b/M5T3zzt69BU/fPQQRWyrAFV0oHpTa4//R1l1+EJFTKlET2FXMIj0xCuH9f8ui/XnPpX2QUCY9y8wkPbWLI/2/zOU975mjdgedoy3LpKNiB9hXl2ZT0xM/0VCQ/80MjT/Ky00+S1foP0th/P9LIn1/y6M9eoujvbmLI72/y+Q9vQ7mPdpkJ++G3mEnnxqb33QWlxl9UtLUP9BQEP/NTQ3/ygnKf8qMT7TOYHZczKN960vjPXcL4723jCQ9r84lfZhV6b4CHR8jwB9hpwGZmx8PFVaaZlFS1rfOzxF+y8uMf8rKS3/NDI1nVBCNhBMqv8GRZj2GUaa9xtLnvcLxOH8AH+6+QAAAAAAAAAAAG1mXQB+c2MDV1VWIUVER1g3NjmNLSwwtSkoLM00MzaVVFNUHzc2OQDHxcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAClpaYA4uLiAFZVWAY6Oj0TODY6JFVUVhUFBAkAw8LCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADhAAAA4QAAACEAAAAhAAAAIQAAACEAAAAgAAAAAAAAAAAAAACAAQAA4B8AAPwfAAD//wAA//8AAA==" InformativeScreenshot="637c68d4cab028663fad9dfee121ba3b.png" Selector="&lt;html app='firefox.exe' title='Meus cursos | Moodle' /&gt;" Title="Meus cursos | Moodle" Url="http://192.168.61.140/moodle/my/courses.php" />
+                            </uix:NApplicationCard.TargetApp>
+                          </uix:NApplicationCard>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="1524,3358" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Firefox: Informática: Participantes | Moodle" sap:VirtualizedContainerService.HintSize="1462,3268" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="1781d195-04ec-439e-8998-d25cf95ef2ac" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1428,2985" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inscrever usuários'" sap:VirtualizedContainerService.HintSize="1366,227" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1781d195-04ec-439e-8998-d25cf95ef2ac" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" DesignTimeRectangle="568, 339, 142, 37" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Inscrever usuários' check:text='Inscrever usuários' /&gt;" Guid="80ab7c27-40fb-4af2-b320-554c953752c0" InformativeScreenshot="b70d28be2284cb8e0344969651e79113.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="332, 339, 206, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' type='' class='btn dropdown-toggle' aaname='                             Usuários inscritos                         ' check:innerText='Usuários inscritos' /&gt;" Guid="7f85f2d9-9fba-4a72-b583-38c2b31ee63f" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Label'" sap:VirtualizedContainerService.HintSize="1366,227" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1781d195-04ec-439e-8998-d25cf95ef2ac" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" DesignTimeRectangle="676, 289, 21, 30" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='form_autocomplete_downarrow-1725036298594' tag='SPAN' type='' class='form-autocomplete-downarrow position-absolute p-1' aaname='▼' check:innerText='▼' /&gt;" Guid="7ccd3ddd-a46c-4772-aa3e-de54da1cc38c" InformativeScreenshot="329174cdc57e86e1881e3e64b9970328.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="308, 200, 244, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='id_main' tag='H3' type='' class='d-flex align-self-stretch align-items-center mb-0' aaname='             Opções de inscrição         ' check:innerText='Opções de inscrição' /&gt;" Guid="9e11502d-9d58-448c-8c66-adbbca0a6a3c" SearchSteps="FuzzySelector" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                  </uix:NClick>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Selecione os usuários'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1366,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="1781d195-04ec-439e-8998-d25cf95ef2ac" Version="V4">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="2f584861-c515-4c49-ad1e-0f4abab59db3" CvElementArea="502, 283, 201, 40" CvType="InputBox" DesignTimeRectangle="503, 285, 198, 37" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='form_autocomplete_input-1725036298594' tag='INPUT' type='text' class='form-control' placeholder='Buscar' aaname='                     Selecione os usuários                 ' /&gt;" Guid="6b5beb58-55d5-4329-a8da-0acf85defd04" InformativeScreenshot="76dc86cdaa52cd847490412b4ebf105c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="2f584861-c515-4c49-ad1e-0f4abab59db3" CvTextArea="307, 251, 143, 14" CvTextArgument="Selecione OS usuários" CvType="Text" DesignTimeRectangle="308, 246, 141, 68" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id_userlist_label' tag='LABEL' type='' class='d-inline word-break ' aaname='                     Selecione os usuários                 ' check:innerText='Selecione os usuários' /&gt;" Guid="53a21f6d-ff44-451b-a65a-85d61665baed" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                    <uix:NTypeInto.Text>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">
+                                          <CSharpValue.Result>
+                                            <OutArgument x:TypeArguments="x:String" />
+                                          </CSharpValue.Result>Aluno</CSharpValue>
+                                      </InArgument>
+                                    </uix:NTypeInto.Text>
+                                    <uix:NTypeInto.VerifyOptions>
+                                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      </uix:VerifyExecutionTypeIntoOptions>
+                                    </uix:NTypeInto.VerifyOptions>
+                                  </uix:NTypeInto>
+                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1366,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                                    <uix:NKeyboardShortcuts.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NKeyboardShortcuts.VerifyOptions>
+                                  </uix:NKeyboardShortcuts>
+                                  <uix:NCheckState DisplayName="Check App State 'Opções de inscrição'" sap:VirtualizedContainerService.HintSize="1366,1904" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="1781d195-04ec-439e-8998-d25cf95ef2ac" Version="V4">
+                                    <uix:NCheckState.IfExists>
+                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="608,1285" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inscrever usuários'" sap:VirtualizedContainerService.HintSize="546,227" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1781d195-04ec-439e-8998-d25cf95ef2ac" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="d6de0e68-91a0-4117-ae98-67dd59e07d48" CvElementArea="930, 454, 145, 40" CvTextArea="944, 467, 118, 14" CvTextArgument="Inscrever usuários" CvType="Button" DesignTimeRectangle="932, 456, 142, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Inscrever usuários' parentid='yui_3_18_1_1_1725036298311_232' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='Inscrever usuários' /&gt;" Guid="db400e27-8cb2-4355-ba73-fe5de1828ee8" InformativeScreenshot="392f502e6d119725b2017eec627cd2ad.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="d6de0e68-91a0-4117-ae98-67dd59e07d48" CvElementArea="839, 454, 87, 40" CvTextArea="853, 467, 59, 14" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="841, 456, 83, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='yui_3_18_1_1_1725036298311_232' tag='BUTTON' type='button' class='btn btn-secondary' aaname='Cancelar' check:innerText='Cancelar' /&gt;" Guid="9f1e7aa3-1091-4e5f-8939-acc9432f8924" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="546,968" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_18">
+                                          <ueab:ExcelProcessScopeX.Body>
+                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,816" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_17">
+                                                  <ueab:ExcelProcessScopeX.Body>
+                                                    <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,618" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <umae:WriteRowConnections ArrayRow="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntryItemUrl="{x:Null}" ManualEntrySiteUrl="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" BrowserDriveId="3b9a46b1257cbd57" BrowserItemFriendlyName="Logs Inscrições nos cursos.xlsx" BrowserItemId="3B9A46B1257CBD57!108142" ConnectionId="4c9653a8-1698-4136-8916-67d49da840fa" DataType="IndividualFields" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="354,530" sap2010:WorkflowViewState.IdRef="WriteRowConnections_9" ItemSelectionMode="Browse" Range="Planilha1" RangeMode="Sheet" RowPosition="0" UseConnectionService="True" WorkingWithTemplateWorkbook="False" WriteMode="Append">
+                                                          <umae:WriteRowConnections.AllFields>
+                                                            <x:Array Type="umem:RangeColumn">
+                                                              <umem:RangeColumn DisplayName="Column A" Guid="ad86e006-f73f-4367-9eca-b9cb8d295f8c" Index="0" Name="Column A">
+                                                                <umem:RangeColumn.Sample>
+                                                                  <umem:CellDetail TypeFormat="{x:Null}" Type="Object" Value="" />
+                                                                </umem:RangeColumn.Sample>
+                                                              </umem:RangeColumn>
+                                                            </x:Array>
+                                                          </umae:WriteRowConnections.AllFields>
+                                                          <umae:WriteRowConnections.BrowserDriveName>
+                                                            <InArgument x:TypeArguments="x:String" />
+                                                          </umae:WriteRowConnections.BrowserDriveName>
+                                                          <umae:WriteRowConnections.BrowserSiteUrl>
+                                                            <InArgument x:TypeArguments="x:String" />
+                                                          </umae:WriteRowConnections.BrowserSiteUrl>
+                                                          <umae:WriteRowConnections.InputDataTypeBackup>
+                                                            <usau:BackupSlot x:TypeArguments="umaee:InputDataType" StoredValue="IndividualFields">
+                                                              <usau:BackupSlot.BackupValues>
+                                                                <scg:List x:TypeArguments="x:Object" x:Key="DataRow" Capacity="1">
+                                                                  <InArgument x:TypeArguments="sd:DataRow">
+                                                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">Aluno + " Foi cadastrado corretamente"</CSharpValue>
+                                                                  </InArgument>
+                                                                </scg:List>
+                                                              </usau:BackupSlot.BackupValues>
+                                                            </usau:BackupSlot>
+                                                          </umae:WriteRowConnections.InputDataTypeBackup>
+                                                          <umae:WriteRowConnections.ItemIdBackup>
+                                                            <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" StoredValue="Browse">
+                                                              <usau:BackupSlot.BackupValues>
+                                                                <scg:Dictionary x:TypeArguments="umafe:EDriveItemMode, scg:List(x:Object)" />
+                                                              </usau:BackupSlot.BackupValues>
+                                                            </usau:BackupSlot>
+                                                          </umae:WriteRowConnections.ItemIdBackup>
+                                                          <umae:WriteRowConnections.RangeWriteModeBackup>
+                                                            <usau:BackupSlot x:TypeArguments="umaee:RangeWriteMode" StoredValue="Append">
+                                                              <usau:BackupSlot.BackupValues>
+                                                                <scg:Dictionary x:TypeArguments="umaee:RangeWriteMode, scg:List(x:Object)" />
+                                                              </usau:BackupSlot.BackupValues>
+                                                            </usau:BackupSlot>
+                                                          </umae:WriteRowConnections.RangeWriteModeBackup>
+                                                          <umae:WriteRowConnections.State>
+                                                            <umas:ActivityState>
+                                                              <umas:ActivityState.SelectedFields>
+                                                                <scg:List x:TypeArguments="umas:DynamicField" Capacity="1">
+                                                                  <umas:DynamicField Id="ad86e006-f73f-4367-9eca-b9cb8d295f8c" Name="dynamicField_AddRangeProperty_20">
+                                                                    <umas:DynamicField.ArgumentValue>
+                                                                      <InArgument x:TypeArguments="x:Object">
+                                                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">Aluno + " INSCRITO COM SUCESSO NO CURSO " + Turma</CSharpValue>
+                                                                      </InArgument>
+                                                                    </umas:DynamicField.ArgumentValue>
+                                                                  </umas:DynamicField>
+                                                                </scg:List>
+                                                              </umas:ActivityState.SelectedFields>
+                                                            </umas:ActivityState>
+                                                          </umae:WriteRowConnections.State>
+                                                        </umae:WriteRowConnections>
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </ueab:ExcelProcessScopeX.Body>
+                                                </ueab:ExcelProcessScopeX>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ueab:ExcelProcessScopeX.Body>
+                                        </ueab:ExcelProcessScopeX>
+                                      </Sequence>
+                                    </uix:NCheckState.IfExists>
+                                    <uix:NCheckState.IfNotExists>
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="704,1660" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cancelar'" sap:VirtualizedContainerService.HintSize="642,227" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1781d195-04ec-439e-8998-d25cf95ef2ac" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="c74a2f58-cd6a-4dc8-b61d-bb3f6e50cf51" CvElementArea="839, 454, 87, 40" CvTextArea="853, 467, 59, 14" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="841, 456, 83, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Cancelar' parentid='yui_3_18_1_1_1725038047867_233' tag='BUTTON' type='button' class='btn btn-secondary' check:innerText='Cancelar' /&gt;" Guid="6af7b93c-0081-4848-be3d-fb3960ac4e19" InformativeScreenshot="d7c6921bbd56a0678be2b91f49fdd43c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="c74a2f58-cd6a-4dc8-b61d-bb3f6e50cf51" CvElementArea="930, 454, 145, 40" CvTextArea="944, 467, 118, 14" CvTextArgument="Inscrever usuários" CvType="Button" DesignTimeRectangle="932, 456, 142, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Inscrever usuários' parentid='yui_3_18_1_1_1725038047867_233' tag='BUTTON' type='button' class='btn btn-primary' check:innerText='Inscrever usuários' /&gt;" Guid="000665c0-f449-446c-a992-5fa4bc58d529" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,177" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+                                          <ui:LogMessage.Message>
+                                            <InArgument x:TypeArguments="x:Object">
+                                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">
+                                                <CSharpValue.Result>
+                                                  <OutArgument x:TypeArguments="x:Object" />
+                                                </CSharpValue.Result>"Usuário já isncrito no curso ou não possui cadastro nos sistema"</CSharpValue>
+                                            </InArgument>
+                                          </ui:LogMessage.Message>
+                                        </ui:LogMessage>
+                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="642,1166" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_21">
+                                          <ueab:ExcelProcessScopeX.Body>
+                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                              </ActivityAction.Argument>
+                                              <Sequence sap:VirtualizedContainerService.HintSize="608,1014" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="546,926" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_20">
+                                                  <ueab:ExcelProcessScopeX.Body>
+                                                    <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,816" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_19">
+                                                          <ueab:ExcelProcessScopeX.Body>
+                                                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                                              <ActivityAction.Argument>
+                                                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                                              </ActivityAction.Argument>
+                                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,618" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <umae:WriteRowConnections ArrayRow="{x:Null}" BrowserParentItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntryDriveName="{x:Null}" ManualEntryItemFullPath="{x:Null}" ManualEntryItemId="{x:Null}" ManualEntryItemRelativePath="{x:Null}" ManualEntryItemUrl="{x:Null}" ManualEntrySiteUrl="{x:Null}" TemplateBrowserDriveName="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" TemplateBrowserSiteUrl="{x:Null}" WorkbookSample="{x:Null}" AuthScopesInvalid="False" BrowserDriveId="3b9a46b1257cbd57" BrowserItemFriendlyName="Logs Inscrições nos cursos.xlsx" BrowserItemId="3B9A46B1257CBD57!108142" ConnectionId="4c9653a8-1698-4136-8916-67d49da840fa" DataType="IndividualFields" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="354,530" sap2010:WorkflowViewState.IdRef="WriteRowConnections_10" ItemSelectionMode="Browse" Range="Planilha1" RangeMode="Sheet" RowPosition="0" UseConnectionService="True" WorkingWithTemplateWorkbook="False" WriteMode="Append">
+                                                                  <umae:WriteRowConnections.AllFields>
+                                                                    <x:Array Type="umem:RangeColumn">
+                                                                      <umem:RangeColumn DisplayName="Column A" Guid="7c5166c8-3697-4402-a7fc-727d96cc0a21" Index="0" Name="Column A">
+                                                                        <umem:RangeColumn.Sample>
+                                                                          <umem:CellDetail TypeFormat="{x:Null}" Type="Object" Value="" />
+                                                                        </umem:RangeColumn.Sample>
+                                                                      </umem:RangeColumn>
+                                                                    </x:Array>
+                                                                  </umae:WriteRowConnections.AllFields>
+                                                                  <umae:WriteRowConnections.BrowserDriveName>
+                                                                    <InArgument x:TypeArguments="x:String" />
+                                                                  </umae:WriteRowConnections.BrowserDriveName>
+                                                                  <umae:WriteRowConnections.BrowserSiteUrl>
+                                                                    <InArgument x:TypeArguments="x:String" />
+                                                                  </umae:WriteRowConnections.BrowserSiteUrl>
+                                                                  <umae:WriteRowConnections.InputDataTypeBackup>
+                                                                    <usau:BackupSlot x:TypeArguments="umaee:InputDataType" StoredValue="IndividualFields">
+                                                                      <usau:BackupSlot.BackupValues>
+                                                                        <scg:List x:TypeArguments="x:Object" x:Key="DataRow" Capacity="1">
+                                                                          <InArgument x:TypeArguments="sd:DataRow">
+                                                                            <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">Aluno + " Foi cadastrado corretamente"</CSharpValue>
+                                                                          </InArgument>
+                                                                        </scg:List>
+                                                                      </usau:BackupSlot.BackupValues>
+                                                                    </usau:BackupSlot>
+                                                                  </umae:WriteRowConnections.InputDataTypeBackup>
+                                                                  <umae:WriteRowConnections.ItemIdBackup>
+                                                                    <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" StoredValue="Browse">
+                                                                      <usau:BackupSlot.BackupValues>
+                                                                        <scg:Dictionary x:TypeArguments="umafe:EDriveItemMode, scg:List(x:Object)" />
+                                                                      </usau:BackupSlot.BackupValues>
+                                                                    </usau:BackupSlot>
+                                                                  </umae:WriteRowConnections.ItemIdBackup>
+                                                                  <umae:WriteRowConnections.RangeWriteModeBackup>
+                                                                    <usau:BackupSlot x:TypeArguments="umaee:RangeWriteMode" StoredValue="Append">
+                                                                      <usau:BackupSlot.BackupValues>
+                                                                        <scg:Dictionary x:TypeArguments="umaee:RangeWriteMode, scg:List(x:Object)" />
+                                                                      </usau:BackupSlot.BackupValues>
+                                                                    </usau:BackupSlot>
+                                                                  </umae:WriteRowConnections.RangeWriteModeBackup>
+                                                                  <umae:WriteRowConnections.State>
+                                                                    <umas:ActivityState>
+                                                                      <umas:ActivityState.SelectedFields>
+                                                                        <scg:List x:TypeArguments="umas:DynamicField" Capacity="1">
+                                                                          <umas:DynamicField Id="7c5166c8-3697-4402-a7fc-727d96cc0a21" Name="dynamicField_AddRangeProperty_20">
+                                                                            <umas:DynamicField.ArgumentValue>
+                                                                              <InArgument x:TypeArguments="x:Object">
+                                                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">Aluno + " JÁ INSCRITO NO CURSO " + Turma + " OU NÃO POSSUI CADASTRO NO SISTEMA."</CSharpValue>
+                                                                              </InArgument>
+                                                                            </umas:DynamicField.ArgumentValue>
+                                                                          </umas:DynamicField>
+                                                                        </scg:List>
+                                                                      </umas:ActivityState.SelectedFields>
+                                                                    </umas:ActivityState>
+                                                                  </umae:WriteRowConnections.State>
+                                                                </umae:WriteRowConnections>
+                                                              </Sequence>
+                                                            </ActivityAction>
+                                                          </ueab:ExcelProcessScopeX.Body>
+                                                        </ueab:ExcelProcessScopeX>
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </ueab:ExcelProcessScopeX.Body>
+                                                </ueab:ExcelProcessScopeX>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ueab:ExcelProcessScopeX.Body>
+                                        </ueab:ExcelProcessScopeX>
+                                      </Sequence>
+                                    </uix:NCheckState.IfNotExists>
+                                    <uix:NCheckState.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="b10b5b98-f6eb-42e7-8b66-0b3f8403e0c7" CvElementArea="507, 244, 432, 36" CvTextArea="757, 256, 175, 16" CvType="Button" DesignTimeRectangle="760, 254, 170, 17" DesignTimeScaleFactor="1" Guid="8488ab9d-e922-475c-884c-413718a27358" InformativeScreenshot="8cee006302c14f7d80a810bff74cff64.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CVScreenId="b10b5b98-f6eb-42e7-8b66-0b3f8403e0c7" CvTextArea="306, 205, 246, 28" CvTextArgument="Opções de inscrição" CvType="Text" DesignTimeRectangle="308, 200, 244, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='id_main' tag='H3' type='' class='d-flex align-self-stretch align-items-center mb-0' aaname='             Opções de inscrição         ' check:innerText='Opções de inscrição' /&gt;" Guid="dadd3f77-4154-4adc-8c37-ed87b1622c87" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                        <uix:TargetAnchorable.CvTextArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">string.Format("*{0}*", Email)</CSharpValue>
+                                          </InArgument>
+                                        </uix:TargetAnchorable.CvTextArgument>
+                                        <uix:TargetAnchorable.FuzzySelectorArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">string.Format("&lt;webctrl parentid='form_autocomplete_selection-1725043606115-0' tag='SMALL' type='' class='' aaname='*{0}*' check:innerText='*{0}*' /&gt;", Email)</CSharpValue>
+                                          </InArgument>
+                                        </uix:TargetAnchorable.FuzzySelectorArgument>
+                                      </uix:TargetAnchorable>
+                                    </uix:NCheckState.Target>
+                                  </uix:NCheckState>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Firefox" IconBase64="AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKHzzACd78xkoffM3LIH0MD+N9Qcjf/QALof1ICuH9TguivUrOpL2A4nA+gE0k/YnLI/2ODOT9ywAAAAAAAAAACh88wAne/NuKH3z9iyB9NQ/jfUdI4D0AC6H9Y4rh/X5Lor1vjqS9g2JwPoFNZP2rCyP9vczk/fEZJb1AmOV9QYqfvMAJ3zzdCh98/8sgfTgP431HySA9AAuiPWWK4f1/y6K9ck6kvYNicD6BTWT9rYsj/b/M5T3zzt68yI0dfIxLXrzACd883QoffP/LIH04D+N9R8kgPQAL4j1liuH9f8uivXJOpL1DYnA+gU1k/a2LY/2/zOU9880dfJNMnPySSp38gAnfPN0KH7z/yyC9eBAjvYfJID1AC+I9ZYrh/X/Lov1yTuT9g2JwPoFNZP2ti2P9v8zlPfPO3rzPDt68y8uevIAKHzzdCl98P8ugO7iQovtIRt57wAviPWYK4f1/y6L9cs8k/YOf7v6BTST9rcsj/b/M5T3zzt69BU/fPQQRWyrAFV0oHpTa4//R1l1+EJFTKlET2FXMIj0xCuH9f8ui/XnPpX2QUCY9y8wkPbWLI/2/zOU975mjdgedoy3LpKNiB9hXl2ZT0xM/0VCQ/80MjT/Ky00+S1foP0th/P9LIn1/y6M9eoujvbmLI72/y+Q9vQ7mPdpkJ++G3mEnnxqb33QWlxl9UtLUP9BQEP/NTQ3/ygnKf8qMT7TOYHZczKN960vjPXcL4723jCQ9r84lfZhV6b4CHR8jwB9hpwGZmx8PFVaaZlFS1rfOzxF+y8uMf8rKS3/NDI1nVBCNhBMqv8GRZj2GUaa9xtLnvcLxOH8AH+6+QAAAAAAAAAAAG1mXQB+c2MDV1VWIUVER1g3NjmNLSwwtSkoLM00MzaVVFNUHzc2OQDHxcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAClpaYA4uLiAFZVWAY6Oj0TODY6JFVUVhUFBAkAw8LCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADhAAAA4QAAACEAAAAhAAAAIQAAACEAAAAgAAAAAAAAAAAAAACAAQAA4B8AAPwfAAD//wAA//8AAA==" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="fa7fc8627c7e0e81bc990c0f6f5f4dad.png" Selector="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" Title="Informática: Participantes | Moodle" Url="http://192.168.61.140/moodle/user/index.php?id=*" />
+                            </uix:NApplicationCard.TargetApp>
+                          </uix:NApplicationCard>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/my/courses.php" CVScreenId="e562557c-00ea-4917-8b0c-2c4919443906" CvTextArea="290, 274, 169, 16" CvTextArgument="Resumo dos cursos" CvType="Text" DesignTimeRectangle="291, 269, 167, 25" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H5' type='' class='card-title d-inline' aaname='Resumo dos cursos' check:innerText='Resumo dos cursos' /&gt;" Guid="4878ab82-4c0a-464b-a999-5cd283262a4a" InformativeScreenshot="a5ad0c9c496b34e22632d8c15465b831.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Meus cursos | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="e562557c-00ea-4917-8b0c-2c4919443906" CvTextArea="303, 338, 42, 14" CvTextArgument="Todos" CvType="Text" DesignTimeRectangle="291, 327, 83, 37" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='groupingdropdown' tag='BUTTON' type='button' class='btn btn-outline-secondary dropdown-toggle' aaname='                                                                       Todos                                                                                                                                                                                            ' check:innerText='Todos' /&gt;" Guid="0f145677-6d13-476e-83be-00e0c22c6895" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <ui:ForEachRow.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="sd:DataTable" />
+                    </CSharpValue.Result>PlanilhaDados</CSharpValue>
+                </InArgument>
+              </ui:ForEachRow.DataTable>
+            </ui:ForEachRow>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Firefox: Informática: Participantes | Moodle" sap:VirtualizedContainerService.HintSize="3198,551" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="7b18f00a-60db-4857-a41a-5e2e61b8340f" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,310" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Meus cursos'" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7b18f00a-60db-4857-a41a-5e2e61b8340f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://192.168.61.140/moodle/user/index.php?id=2" CVScreenId="a49fe167-3cd2-4aca-aeac-3b3a86e71b2c" CvTextArea="277, 116, 81, 14" CvTextArgument="Meus cursos" CvType="Text" DesignTimeRectangle="270, 93, 96, 60" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                                 Meus cursos                                             ' aria-role='menuitem' tag='A' type='' class='nav-link  ' check:innerText='Meus cursos' /&gt;" Guid="9f27597d-b2e8-4215-87e5-f93dfe97fbe4" InformativeScreenshot="6b2336b6563f8dea2bff282bf4f90862.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="a49fe167-3cd2-4aca-aeac-3b3a86e71b2c" CvTextArea="222, 116, 40, 14" CvTextArgument="Painel" CvType="Text" DesignTimeRectangle="215, 93, 55, 60" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                                 Painel                                             ' aria-role='menuitem' tag='A' type='' class='nav-link  ' check:innerText='Painel' /&gt;" Guid="7d7646eb-7336-459c-940a-e83da055125e" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Firefox" IconBase64="AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKHzzACd78xkoffM3LIH0MD+N9Qcjf/QALof1ICuH9TguivUrOpL2A4nA+gE0k/YnLI/2ODOT9ywAAAAAAAAAACh88wAne/NuKH3z9iyB9NQ/jfUdI4D0AC6H9Y4rh/X5Lor1vjqS9g2JwPoFNZP2rCyP9vczk/fEZJb1AmOV9QYqfvMAJ3zzdCh98/8sgfTgP431HySA9AAuiPWWK4f1/y6K9ck6kvYNicD6BTWT9rYsj/b/M5T3zzt68yI0dfIxLXrzACd883QoffP/LIH04D+N9R8kgPQAL4j1liuH9f8uivXJOpL1DYnA+gU1k/a2LY/2/zOU9880dfJNMnPySSp38gAnfPN0KH7z/yyC9eBAjvYfJID1AC+I9ZYrh/X/Lov1yTuT9g2JwPoFNZP2ti2P9v8zlPfPO3rzPDt68y8uevIAKHzzdCl98P8ugO7iQovtIRt57wAviPWYK4f1/y6L9cs8k/YOf7v6BTST9rcsj/b/M5T3zzt69BU/fPQQRWyrAFV0oHpTa4//R1l1+EJFTKlET2FXMIj0xCuH9f8ui/XnPpX2QUCY9y8wkPbWLI/2/zOU975mjdgedoy3LpKNiB9hXl2ZT0xM/0VCQ/80MjT/Ky00+S1foP0th/P9LIn1/y6M9eoujvbmLI72/y+Q9vQ7mPdpkJ++G3mEnnxqb33QWlxl9UtLUP9BQEP/NTQ3/ygnKf8qMT7TOYHZczKN960vjPXcL4723jCQ9r84lfZhV6b4CHR8jwB9hpwGZmx8PFVaaZlFS1rfOzxF+y8uMf8rKS3/NDI1nVBCNhBMqv8GRZj2GUaa9xtLnvcLxOH8AH+6+QAAAAAAAAAAAG1mXQB+c2MDV1VWIUVER1g3NjmNLSwwtSkoLM00MzaVVFNUHzc2OQDHxcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAClpaYA4uLiAFZVWAY6Oj0TODY6JFVUVhUFBAkAw8LCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADhAAAA4QAAACEAAAAhAAAAIQAAACEAAAAgAAAAAAAAAAAAAACAAQAA4B8AAPwfAAD//wAA//8AAA==" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="9758a057b23218b17eb8fa62faf32c64.png" Selector="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" Title="Informática: Participantes | Moodle" Url="http://192.168.61.140/moodle/user/index.php?id=2" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </umae:ForEachSheetConnections.Body>
+      <umae:ForEachSheetConnections.BrowserDriveName>
+        <InArgument x:TypeArguments="x:String" />
+      </umae:ForEachSheetConnections.BrowserDriveName>
+      <umae:ForEachSheetConnections.BrowserSiteUrl>
+        <InArgument x:TypeArguments="x:String" />
+      </umae:ForEachSheetConnections.BrowserSiteUrl>
+      <umae:ForEachSheetConnections.ItemIdBackup>
+        <usau:BackupSlot x:TypeArguments="umafe:EDriveItemMode" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="umafe:EDriveItemMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </umae:ForEachSheetConnections.ItemIdBackup>
+    </umae:ForEachSheetConnections>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Firefox: Informática: Participantes | Moodle" sap:VirtualizedContainerService.HintSize="3294,347" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="6a7bdbd6-bf21-42e7-b3de-8ec030b3a3f5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,106" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Firefox" IconBase64="AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKHzzACd78xkoffM3LIH0MD+N9Qcjf/QALof1ICuH9TguivUrOpL2A4nA+gE0k/YnLI/2ODOT9ywAAAAAAAAAACh88wAne/NuKH3z9iyB9NQ/jfUdI4D0AC6H9Y4rh/X5Lor1vjqS9g2JwPoFNZP2rCyP9vczk/fEZJb1AmOV9QYqfvMAJ3zzdCh98/8sgfTgP431HySA9AAuiPWWK4f1/y6K9ck6kvYNicD6BTWT9rYsj/b/M5T3zzt68yI0dfIxLXrzACd883QoffP/LIH04D+N9R8kgPQAL4j1liuH9f8uivXJOpL1DYnA+gU1k/a2LY/2/zOU9880dfJNMnPySSp38gAnfPN0KH7z/yyC9eBAjvYfJID1AC+I9ZYrh/X/Lov1yTuT9g2JwPoFNZP2ti2P9v8zlPfPO3rzPDt68y8uevIAKHzzdCl98P8ugO7iQovtIRt57wAviPWYK4f1/y6L9cs8k/YOf7v6BTST9rcsj/b/M5T3zzt69BU/fPQQRWyrAFV0oHpTa4//R1l1+EJFTKlET2FXMIj0xCuH9f8ui/XnPpX2QUCY9y8wkPbWLI/2/zOU975mjdgedoy3LpKNiB9hXl2ZT0xM/0VCQ/80MjT/Ky00+S1foP0th/P9LIn1/y6M9eoujvbmLI72/y+Q9vQ7mPdpkJ++G3mEnnxqb33QWlxl9UtLUP9BQEP/NTQ3/ygnKf8qMT7TOYHZczKN960vjPXcL4723jCQ9r84lfZhV6b4CHR8jwB9hpwGZmx8PFVaaZlFS1rfOzxF+y8uMf8rKS3/NDI1nVBCNhBMqv8GRZj2GUaa9xtLnvcLxOH8AH+6+QAAAAAAAAAAAG1mXQB+c2MDV1VWIUVER1g3NjmNLSwwtSkoLM00MzaVVFNUHzc2OQDHxcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAClpaYA4uLiAFZVWAY6Oj0TODY6JFVUVhUFBAkAw8LCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADhAAAA4QAAACEAAAAhAAAAIQAAACEAAAAgAAAAAAAAAAAAAACAAQAA4B8AAPwfAAD//wAA//8AAA==" sap2010:WorkflowViewState.IdRef="TargetApp_2" InformativeScreenshot="16264a51b8bb2250ce0a1fc7e155418f.png" Selector="&lt;html app='firefox.exe' title='Informática: Participantes | Moodle' /&gt;" Title="Informática: Participantes | Moodle" Url="http://192.168.61.140/moodle/user/index.php?id=*" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
